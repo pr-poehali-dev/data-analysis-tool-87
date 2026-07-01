@@ -27,33 +27,39 @@ export const sections = [
     subtitle: <Badge variant="outline" className="text-white border-white">Натяжные потолки в Ярославле</Badge>,
     title: "Идеальный потолок за 1 день.",
     showButton: true,
-    buttonText: 'Рассчитать стоимость'
+    buttonText: 'Рассчитать стоимость',
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/f66c3170-8c75-4979-940b-78e38500bee8.jpg'
   },
   {
     id: 'about',
     title: 'Почему мы?',
-    content: 'Работаем в Ярославле более 10 лет. Собственное производство, качественные материалы и гарантия 15 лет на каждый потолок.'
+    content: 'Работаем в Ярославле более 10 лет. Собственное производство, качественные материалы и гарантия 15 лет на каждый потолок.',
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/48337789-0282-49ca-b550-802d69b118b8.jpg'
   },
   {
     id: 'services',
     title: 'Что мы делаем',
-    content: 'Матовые, глянцевые и сатиновые потолки, многоуровневые конструкции, парящие потолки с подсветкой и фотопечать по вашему дизайну.'
+    content: 'Матовые, глянцевые и сатиновые потолки, многоуровневые конструкции, парящие потолки с подсветкой и фотопечать по вашему дизайну.',
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/86fdaf20-9d28-466d-93f5-09a3b5d065a6.jpg'
   },
   {
     id: 'prices',
     title: 'Цены на потолки',
-    customContent: <PricesGrid />
+    customContent: <PricesGrid />,
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/f1847b93-5d47-463f-b962-d51b28e20216.jpg'
   },
   {
     id: 'testimonials',
     title: 'Нам доверяют',
-    content: '«Установили за один день, без грязи и пыли. Потолок ровный, мастера аккуратные — рекомендую!» — Ирина, Ярославль.'
+    content: '«Установили за один день, без грязи и пыли. Потолок ровный, мастера аккуратные — рекомендую!» — Ирина, Ярославль.',
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/b47d2f63-3b2b-4398-972c-457b27459852.jpg'
   },
   {
     id: 'contact',
     title: 'Закажите замер',
     content: 'Бесплатный выезд замерщика по Ярославлю и области. Точный расчёт стоимости и договор с фиксированной ценой.',
     showButton: true,
-    buttonText: 'Заказать замер'
+    buttonText: 'Заказать замер',
+    bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/fb157b98-f370-49d5-a969-8bffb48abca0.jpg'
   },
 ]
