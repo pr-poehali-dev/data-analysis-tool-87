@@ -40,7 +40,7 @@ export default function Layout({ children, onNavClick }: LayoutProps) {
             <button
               key={link.label}
               onClick={() => handleNav(link.index)}
-              className="text-neutral-300 hover:text-white text-sm font-medium transition-colors"
+              className="bg-white/10 hover:bg-white/20 transition-colors text-white text-sm font-semibold px-4 py-2 rounded-full"
             >
               {link.label}
             </button>
