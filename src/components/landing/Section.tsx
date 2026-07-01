@@ -10,6 +10,8 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
   const handleButtonClick = () => {
     if (buttonText === "Рассчитать стоимость") {
       setCalcOpen(true)
+    } else if (buttonText === "Заказать замер") {
+      window.location.href = "tel:+79537207563"
     }
   }
 
