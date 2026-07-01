@@ -9,6 +9,32 @@ const prices = [
   { type: "Парящий", desc: "Световая линия по периметру, эффект левитации", price: "от 700 ₽/м²", color: "border-neutral-600" },
 ]
 
+const reviews = [
+  { name: "Ирина К.", room: "Гостиная, 22 м²", text: "Установили за один день, без грязи и пыли. Потолок идеально ровный, мастера аккуратные.", stars: 5 },
+  { name: "Алексей М.", room: "Спальня + зал, 38 м²", text: "Заказывали глянцевый потолок с подсветкой. Результат превзошёл ожидания — смотрится шикарно!", stars: 5 },
+  { name: "Светлана Д.", room: "Кухня, 14 м²", text: "Быстро, чисто, по договору. Цена совпала с расчётом. Через год — никаких нареканий.", stars: 5 },
+  { name: "Дмитрий Н.", room: "3-комнатная квартира", text: "Делали многоуровневый потолок в зале. Сложная работа — справились отлично, даже раньше срока.", stars: 5 },
+]
+
+const ReviewsGrid = () => (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 max-w-4xl">
+    {reviews.map((r) => (
+      <div key={r.name} className="border border-neutral-600 rounded-xl p-5 bg-black/40 backdrop-blur-sm">
+        <div className="flex items-center gap-1 mb-3">
+          {Array.from({ length: r.stars }).map((_, i) => (
+            <span key={i} className="text-[#FF4D00] text-sm">★</span>
+          ))}
+        </div>
+        <p className="text-neutral-200 text-sm leading-relaxed">«{r.text}»</p>
+        <div className="mt-4 border-t border-neutral-700 pt-3">
+          <p className="text-white font-semibold text-sm">{r.name}</p>
+          <p className="text-neutral-500 text-xs">{r.room}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+)
+
 const PricesGrid = () => (
   <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-4xl">
     {prices.map((p) => (
@@ -51,7 +77,7 @@ export const sections = [
   {
     id: 'testimonials',
     title: 'Нам доверяют',
-    content: '«Установили за один день, без грязи и пыли. Потолок ровный, мастера аккуратные — рекомендую!» — Ирина, Ярославль.',
+    customContent: <ReviewsGrid />,
     bgImage: 'https://cdn.poehali.dev/projects/ff2075b8-e3c6-4297-acfd-0eee0b5f0792/files/b47d2f63-3b2b-4398-972c-457b27459852.jpg'
   },
   {
